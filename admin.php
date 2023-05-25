@@ -48,8 +48,6 @@ if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  
-
 </head>
 
 <body>
@@ -381,6 +379,7 @@ function toggleEditMode(sectionId) {
                     </div>
                 </div>
             </div>
+
             <div class="contactForm">
                 <form id="contact-form" method="POST" action="submit.php">
 
@@ -404,8 +403,14 @@ function toggleEditMode(sectionId) {
                 </form>
 
                 </main>
-    </section>
 
+    </section>
+    
+    <section id="display">             
+    <div class="displayButton" style="background-color: #f15d5d; padding: 1%; text-align: center;">
+    <button type="button" class="display-button" style="background: rgb(46, 45, 45); color: black; padding: 1.5%;"><a href="display_msg.php" >Display Messages</a></button>
+         </div>
+</section>
     </div>
     </div>
 </body>
