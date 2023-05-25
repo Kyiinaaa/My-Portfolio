@@ -12,7 +12,7 @@ if (isset($_COOKIE['admin'])) {
     setcookie('admin', '', time() - 3600, '/');
 }
 
-// Redirect the user to the login page
-header("Location: login.php");
+// Redirect the user to the home page
+header("Location: homepage.php");
 exit();
 ?>
